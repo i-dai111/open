@@ -1,14 +1,14 @@
 # open
 
--AHP kansei data.c
+1.AHP kansei data.c
 
 感性データに対しAHP分析を用いて最良のものを選ぶプログラム
 
-–blackjack.cpp
+1.blackjack.cpp
 
 C++を用いてブラックジャックを作成した
 
--avakmeans.java
+1.avakmeans.java
 
 javaを用いてkmeans法によるデータ分析を行うプログラム
 
