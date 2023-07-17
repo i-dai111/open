@@ -12,11 +12,11 @@ C++を用いてブラックジャックを作成した
 
 javaを用いてkmeans法によるデータ分析を行うプログラム
 
--avaknn.java
+- avaknn.java
 
 javaを用いて最近隣法を行えるようにした
 
--cm-cf.py
+- rcm-cf.py
 
 rcm法というkmeans法を変化させた手法を用いて協調フィルタリングを行えるプログラム
 
