@@ -7,6 +7,14 @@ import java.io.IOException;
 
 
 
+
+
+
+
+
+//hahhah
+
+
 public class javaknn {
 	// double型2次元配列を表示する関数
 	public static void show(double[][] A) {
