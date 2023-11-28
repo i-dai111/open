@@ -3,21 +3,20 @@ name: format_and_commit
 on:
   pull_request:
     type: [closed]
+  push:
+    branches: ["p"]
 jobs:
   formatter:
     runs-on: windows-latest
     steps:
-      - name: Checktest
-        uses: actions/checkout@v3
-      - name: Install dotnet-format
-        run: dotnet tool install -g dotnet-format
-      - name: Format code
-        run: dotnet format
+
       - name: Auto-commit if changes
         run: |
+          git checkout -b temp_branch
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
           git commit -m "Apply Code Formatter Change" || echo "No changes to commit"
-          git push
+          git push -u origin temp_branch
+          
           
