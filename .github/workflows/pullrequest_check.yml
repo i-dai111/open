@@ -9,6 +9,8 @@ jobs:
   formatter:
     runs-on: windows-latest
     steps:
+      - name: Checktest
+        uses: actions/checkout@v3
 
       - name: Auto-commit if changes
         run: |
